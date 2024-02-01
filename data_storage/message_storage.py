@@ -24,5 +24,5 @@ class MessageStorage(object):
         create_time = f"{date_stamp().lstrip('_')}"
         content = msg
         insert_data_query = '''INSERT INTO conversation (session, name, create_time, content)
-                                      VALUES ('{}', '{}', '{}', '{}')'''.format(session, name, create_time, content)
+                                      VALUES ("{}", "{}", "{}", "{}")'''.format(session, name, create_time, content)
         self.editor.write(conn="conversation", insert_data_query=insert_data_query)
