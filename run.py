@@ -6,6 +6,14 @@ import sys
 # os.system(f"{Path(__file__).resolve().parent}/venv/bin/python App.py")
 
 file_dir = os.path.dirname(os.path.abspath(__file__))
-# print(file_dir, type(file_dir))
+
 os.chdir(file_dir)
+
+sys.path.append(f"{file_dir}")
+sys.path.append(f"{file_dir}/data_storage")
+sys.path.append(f"{file_dir}/uikit")
+
+global INSTALLED_PATH
+INSTALLED_PATH = file_dir
+
 os.system(f"{file_dir}/venv/bin/python App.py")

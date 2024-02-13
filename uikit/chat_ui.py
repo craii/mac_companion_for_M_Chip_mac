@@ -1,9 +1,5 @@
-import sys
 import json
 import requests
-import sys
-from pathlib import Path
-sys.path.append(f"{Path(__file__).resolve().parent.parent}")
 
 from utils import (init_config,
                    message_concat)

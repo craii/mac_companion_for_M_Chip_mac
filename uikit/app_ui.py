@@ -1,3 +1,4 @@
+import sys
 from chat_ui import *
 from setting_ui import *
 

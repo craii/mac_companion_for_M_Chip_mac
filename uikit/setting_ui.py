@@ -1,6 +1,3 @@
-import sys
-from pathlib import Path
-sys.path.append(f"{Path(__file__).resolve().parent.parent}")
 from PySide6.QtWidgets import (
     QLabel,
     QPushButton,

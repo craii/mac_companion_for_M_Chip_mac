@@ -1,5 +1,3 @@
-import os
-import sys
 import rumps
 
 from utils import (installed_folder,
@@ -22,7 +20,7 @@ cfg = init_config()
 class MenuBarApp(rumps.App):
     def __init__(self):
         super(MenuBarApp, self).__init__("")
-        self.menu = ["Chat", "History", "database_folder"]
+        self.menu = ["Chat", "History", "WebUI"]
         self.icon = f"{installed_folder()}/images/icon.ico"  # 替换为你的应用图标路径
         self.title = ""
 
@@ -39,9 +37,10 @@ class MenuBarApp(rumps.App):
                      name=date_stamp(),
                      args=(f"cd {installed_folder()} && uvicorn transit_server:app --reload --port {cfg['transit_port']}",))
 
-    @rumps.clicked("History")
+    @rumps.clicked("WebUI")
     def open_menu_item(self, _):
-        rumps.alert("Hello, Your App!")
+        # os.system("/Users/eliascheung/anaconda3/envs/chatglmcpp/bin/streamlit run /Users/eliascheung/Documents/chatglm.cpp-chatglm3/examples/chatglm3_demo.py")
+        rumps.alert(f"Hello, Your App is at")
 
     @rumps.clicked("Chat")
     def preferences_menu_item(self, _):

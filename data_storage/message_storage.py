@@ -1,7 +1,3 @@
-import sys
-from pathlib import Path
-sys.path.append(f"{Path(__file__).resolve().parent.parent}")
-
 from utils import date_string, date_stamp
 from data_storage.sqlite_controller import SqliteController
 
