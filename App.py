@@ -21,7 +21,7 @@ cfg = init_config()
 class MenuBarApp(rumps.App):
     def __init__(self):
         super(MenuBarApp, self).__init__("")
-        self.menu = ["Chat", "History", "WebUI"]
+        self.menu = ["Chat", "History", "WebUI", "Total Quit"]
         self.icon = f"{installed_folder()}/images/icon.ico"  # 替换为你的应用图标路径
         self.title = ""
 
@@ -55,7 +55,7 @@ class MenuBarApp(rumps.App):
                      name=f"ChatUI_{date_stamp()}",
                      args=(f"{cfg['python_executable']} {installed_folder()}/uikit/app_ui.py",))
 
-    @rumps.clicked("Quit")
+    @rumps.clicked("Total Quit")
     def quit_menu_item(self, _):
         global PROCESS  # PROCESS is dict
         print(PROCESS)
