@@ -13,7 +13,4 @@ sys.path.append(f"{file_dir}")
 sys.path.append(f"{file_dir}/data_storage")
 sys.path.append(f"{file_dir}/uikit")
 
-global INSTALLED_PATH
-INSTALLED_PATH = file_dir
-
 os.system(f"{file_dir}/venv/bin/python App.py")

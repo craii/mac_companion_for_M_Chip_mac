@@ -71,6 +71,10 @@ def guardian_server(command: str) -> None:
     os.system(command)
 
 
+def run_webui(command: str) -> None:
+    os.system(command)
+
+
 def long_perform(func_target: Callable, name: str, args: tuple) -> dict:
     _process = multiprocessing.Process(target=func_target, args=args, name=name)
     _process.daemon = True
