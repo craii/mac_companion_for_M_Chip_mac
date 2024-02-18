@@ -12,5 +12,5 @@ os.chdir(file_dir)
 sys.path.append(f"{file_dir}")
 sys.path.append(f"{file_dir}/data_storage")
 sys.path.append(f"{file_dir}/uikit")
-
+print("==="*10, sys.path, file_dir, "==="*10 )
 os.system(f"{file_dir}/venv/bin/python App.py")
