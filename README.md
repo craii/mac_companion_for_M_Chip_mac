@@ -1,6 +1,9 @@
 # mac_companion_for_M_Chip_mac
  portable version of mac_companion
 
+# 效果
+https://www.bilibili.com/video/BV1Gy421h7mq/
+
 # 说明
 1. 参考：[mac_companion](https://github.com/craii/mac_companion/blob/main/README.md)
 2. 下载以下内容后解压到项目根目录：
